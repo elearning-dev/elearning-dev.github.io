@@ -18,3 +18,7 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+
+.body > h3, .body > p {
+    width: 100%;
+}
