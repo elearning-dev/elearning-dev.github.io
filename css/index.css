@@ -1,24 +1,149 @@
-* {
-    padding: 0;
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
     margin: 0;
-    box-sizing:border-box;
+    padding: 0;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    margin:0px;
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
-.body {
-    width: 100%;
-    height: 100%;
+.bg-dark{
+    background-color: black;
+    color: white;
+}
+
+.bg-light{
+    background-color: rgba(29, 28, 28, 0.8);
+    color: white;
+}
+
+/*navbar*/
+.navbar {
+    background: rgb(17, 17, 17);
+    color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+
+    position: sticky;
+    align-self: center;
+    z-index: 1;
+    top: 0;
 }
 
-.body > div {
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.actions > div > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 2px solid transparent;
+}
+
+.actions > div > a:hover{
+    border-bottom-color: coral;
+}
+
+/*container*/
+.container {
+    display: block;
+    padding-top: 200px;
+}
+
+.title {
+    margin-bottom: 80px;
+}
+
+.title > h3 {
+    display: block;
+    justify-content: center;
     text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: coral;
+}
+
+.title > p{
+    padding: 1rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.space {
+    width: 20px;
+    background-color: transparent;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    width: 150px;
+    border: none transparent;
+    background: black;
+    color: coral;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.btn > i {
+    margin-right: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(17, 17, 17);
+    padding: 20px 80px 20px 80px;
+}
+
+.info > h3, .info > p { 
+    margin-bottom: 50px;
+}
+
+/*footer*/
+.footer {
+    display: block;
+    background: rgb(17, 17, 17);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer > a {
+    text-decoration: none;
+    color: white;
 }
