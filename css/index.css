@@ -19,6 +19,6 @@ html, body {
     align-items: center;
 }
 
-.body > h3, .body > p {
+.body > div {
     width: 100%;
 }
